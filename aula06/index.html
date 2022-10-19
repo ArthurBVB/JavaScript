@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/geral.css">
+    <link rel="stylesheet" href="estilos/telas.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <main>
+        <section id="loguin">
+            <div id="foto">
+
+            </div>
+            <div id="form">
+                <h1>Loguin</h1>
+                <p>Seja bem-vindo(a) novamente. Faça loguin para poder acessar sua conta!</p>
+                <form action="loguin.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            person
+                            </span>
+                      
+                        <input type="email" name="loguin" id="iloguin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30"> 
+                        <label for="iloguin">Loguin</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            key
+                            </span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required maxlength="20" minlength="6">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <a class="botao" href="esqueci.html"> Esqueci a senha  <span class="material-symbols-outlined">
+                        mail
+                        </span>
+                    </a>
+                    
+                    
+                </form>
+                
+
+            </div>
+        </section>
+    </main>
+    <script>
+        var n1 = Number(window.prompt('Digite um número'))
+        var n2 = Number(window.prompt('Digite um segundo número'))
+        var s =n1 + n2
+        window.alert (`A soma entre ${n1} e ${n2} é ${s}`)
+    </script>
+</body>
+</html>
