@@ -17,6 +17,7 @@
             height: 200px;
             line-height: 200px;
             text-align: center;
+            
         }
     </style>
 </head>
@@ -24,7 +25,7 @@
     <h1>Uso de DOM</h1>
     <p>Veremos agora  como se comporta a <strong>DOM</strong></p>
     <p>A DOM é a arvore do sistema que podemos executar comandos pelo JavaScript</p>
-    <div id="msg">Clique em mim!</div>
+    <div id="msg" >Clique em mim!</div>
 
     <script>
        /* var p1 = window.document.getElementsByTagName('p')[0]
@@ -32,6 +33,26 @@
         var d = window.document.getElementById('msg')
         d.style.background = 'green'
         d.innerText = 'estou aguardando'*/
+        var a = window.document.querySelector('div#msg')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerHTML = 'se fodeu!'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.innerHTML = 'é vírus'
+            a.style.background = 'blue'
+        }
+        function sair(){
+        a.innerHTML = 'Trollei'
+        a.style.background = 'green'
+       
+        
+        }
+
     </script>
 </body>
 
