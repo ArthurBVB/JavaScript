@@ -23,6 +23,7 @@ main{
 }
 div{
     padding: 20px;
+    text-align: center;
 }
 div#foto{
     width: 250px;
